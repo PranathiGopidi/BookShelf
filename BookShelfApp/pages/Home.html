@@ -1,0 +1,18 @@
+<div class="container text-center" ng-controller="BooksCtrl">
+          <form action="/new" method="post">
+        <table align="center">
+            <tr><td></td><td> <input type="text" name="BookName" ng-model="BooksInput1" size="50" placeholder="Book Name"></td></tr>
+            <tr><td></td><td><input type="text" name="ISBN" ng-model="BooksInput2" size="50" placeholder="ISBN"></td></tr>
+            <tr><td></td><td><input type="text" name="AuthorName" ng-model="BooksInput3" size="50" placeholder="Author Name"></td></tr>
+            <tr><td></td><td><input type="text" name="YearPublished" ng-model="BooksInput4" size="50" placeholder="Year Published"></td></tr>
+            <tr><td></td><td><input type="text" name="ReadBooks" ng-model="BooksInput5" size="50" placeholder="URL"></td></tr>
+        </table>
+        <input type="submit" class="btn btn-success" data-dismiss="modal"ng-click="add()" value="Add Book" />
+              <input type=button class = "btn btn-danger" value="Delete" ng-click="delete()"/>
+    </form>
+    <form action="/view" method="get">
+        <input type="submit" class="btn btn-info" style="margin-top: 1%" value="view books" >
+    </form>
+
+</div>
+

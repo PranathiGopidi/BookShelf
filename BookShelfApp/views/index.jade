@@ -1,0 +1,18 @@
+html
+    head
+        style(type="text/css")
+            include style.css
+    body
+    table
+        thead
+            h1 BOOKS
+        thead
+            th Book Name
+            th ISBN
+            th Author Name
+        tbody
+            each book in books
+                tr
+                    td=book.BookName
+                    td=book.ISBN
+                    td=book.AuthorName

@@ -1,0 +1,24 @@
+{
+  "name": "learnhtml",
+  "version": "1.0.0",
+  "description": "bookshelfapp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Pranathi",
+  "license": "ISC",
+  "keywords": [],
+  "dependencies": {
+    "angular": "^1.6.9",
+    "angular-local-storage": "^0.7.1",
+    "body-parser": "^1.18.2",
+    "express": "^3.21.2",
+    "get-dependencies": "^1.1.0",
+    "jade": "^1.11.0",
+    "mongoose": "^5.0.5",
+    "ng2-router-modal": "0.0.8",
+    "node": "^9.5.0",
+    "nodemon": "^1.15.0"
+  }
+}

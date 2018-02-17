@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<!-- define angular app -->
+<html ng-app="myApp">
+
+<head>
+    <!-- SCROLLS -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" />
+
+    <!-- SPELLS -->
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+    <script src="script.js"></script>
+
+    <style>
+        p{
+            color: crimson;
+            font-weight: bolder;
+            font-size: x-large;
+        }
+        p1{
+            font-weight: bold;
+            font-size: large;
+            color: indigo;
+        }
+    </style>
+
+</head>
+
+<!-- define angular controller -->
+<body  ng-controller="BooksCtrl" background="img1.jpg">
+<div align="right">
+    <a href="#"><button class="btn btn-primary" data-toggle="tooltip" title="Index">Index <span class="glyphicon glyphicon-th-list"></span></button> </a>
+    <a href="#About"> <button class="btn btn-primary" data-toggle="tooltip" title="About">About <span class="glyphicon glyphicon-user"></span></button></a>
+    <a href="#Home"><button class="btn btn-primary" data-toggle="tooltip" title="Home">Home <span class="glyphicon glyphicon-home"></span></button></a>
+</div>
+<div align="center">
+    <p>
+        Welcome to BookShelf Application!!
+    </p>
+</div>
+
+<div id="main">
+
+    <!-- angular templating -->
+    <!-- this is where content will be injected -->
+    <div ng-view></div>
+
+</div>
+
+</body>
+
+</html>

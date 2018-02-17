@@ -1,0 +1,22 @@
+table,th,td{
+    margin: auto;
+    border: 1px solid black;
+    width: 50%;
+    text-align: center;
+    padding: 8px;
+    table-layout: fixed;
+}
+table{
+    border-collapse: collapse;
+}
+h1{
+    text-align: center;
+    color: brown;
+}
+body{
+    background-image: url(/img1.jpg);
+}
+th{
+    color: blue;
+}
+
